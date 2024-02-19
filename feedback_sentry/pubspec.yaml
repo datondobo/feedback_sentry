@@ -12,7 +12,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  feedback: ^3.0.0
+  feedback:
+    path: feedback_sentry
   sentry: ^7.0.0
 
 dev_dependencies:
