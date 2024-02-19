@@ -84,6 +84,24 @@ class EnFeedbackLocalizations extends FeedbackLocalizations {
   String get navigate => 'Navigate';
 }
 
+/// Default english localization
+class EsFeedbackLocalizations extends FeedbackLocalizations {
+  /// Creates a [EsFeedbackLocalizations].
+  const EsFeedbackLocalizations();
+
+  @override
+  String get submitButtonText => 'Enviar';
+
+  @override
+  String get feedbackDescriptionText => 'Cuentanos que paso';
+
+  @override
+  String get draw => 'Dibujar';
+
+  @override
+  String get navigate => 'Navegar';
+}
+
 /// Default french localization
 class FrFeedbackLocalizations extends FeedbackLocalizations {
   /// Creates a [FrFeedbackLocalizations].
@@ -317,6 +335,7 @@ class GlobalFeedbackLocalizationsDelegate
   /// Override this member to provide your own localized strings.
   final supportedLocales = <Locale, FeedbackLocalizations>{
     const Locale('en'): const EnFeedbackLocalizations(),
+    const Locale('es'): const EsFeedbackLocalizations(),
     const Locale('de'): const DeFeedbackLocalizations(),
     const Locale('fr'): const FrFeedbackLocalizations(),
     const Locale('ar'): const ArFeedbackLocalizations(),
